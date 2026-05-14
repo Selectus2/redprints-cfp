@@ -34,7 +34,7 @@ export default function Index({ oauth_providers }: IndexProps) {
           </div>
           <div className="flex items-center">
             <MapPinIcon className="mr-2 h-5 w-5" />
-            <span>Jaipur, India</span>
+            <span>Hyderabad, India</span>
           </div>
           <div className="flex items-center">
             <UsersIcon className="mr-2 h-5 w-5" />
