@@ -11,9 +11,7 @@ interface ResolvedComponent {
 void createInertiaApp({
   // Set default page title
   // see https://inertia-rails.netlify.app/guide/title-and-meta
-  //
-  // FIXME: Replace with your application's title
-  title: (title) => (title ? `${title}, CFP App` : "CFP App"),
+  title: (title) => (title ? `${title} · GopherCon India CFP` : "GopherCon India CFP"),
 
   // Disable progress bar
   //

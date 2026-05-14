@@ -39,7 +39,7 @@ export default function New({ proposal, speaker, cfp }: NewProps) {
             <p className="text-cloud-600">
               {fieldName(
                 "description",
-                "Share your knowledge with the Ruby community. All fields marked with * are required.",
+                "Share your knowledge with the Go community. All fields marked with * are required.",
               )}
             </p>
           </div>

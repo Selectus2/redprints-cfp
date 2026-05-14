@@ -1,10 +1,39 @@
 - id: primary
   tracks:
-    oss: New Open Source and Tooling
-    scale: Scaling Ruby and Rails
     general: General
-  deadline: "2025-12-14T00:00:00-07:00"
-  field_names: {}
+    concurrency: Concurrency and Performance
+    tooling: Tooling, Compilers and Internals
+    systems: Systems, Networking and Cloud
+    community: Community, Career and Culture
+  # TODO: confirm final CFP close date once GopherCon India 2026 is announced
+  deadline: "2026-08-15T23:59:00+05:30"
+  field_names:
+    description: >
+      Share your knowledge with the Go community at GopherCon India. Talks
+      should be grounded in real-world Go experience.
 - id: workshops
   tracks:
-    workshop:
+    workshop: ""
+  # TODO: confirm workshop CFP deadline
+  deadline: "2026-08-15T23:59:00+05:30"
+  field_names:
+    header: "Submit Your Workshop"
+- id: lts
+  tracks:
+    lt: ""
+  # TODO: confirm lightning-talk CFP deadline
+  deadline: "2026-09-01T23:59:00+05:30"
+  field_names:
+    header: "Submit Your Lightning Talk"
+    description: >
+      Share your quick insights and lightning-fast ideas with the Go community at GopherCon India!
+    talk_header: "Lightning Talk Information"
+    title: "Title"
+    title_description: ""
+    abstract: "What will you talk about?"
+    abstract_description: "Give us a brief overview of your lightning talk topic"
+    details: "Talk Details"
+    details_description: "Tell us more about what you'll cover in your 5-minute presentation."
+    details_notice: "Remember, lightning talks are typically 5 minutes long with no Q&A."
+    pitch: "Why is this relevant to the Go community?"
+    pitch_description: ""

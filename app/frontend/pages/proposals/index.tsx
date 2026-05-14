@@ -56,8 +56,8 @@ export default function Index({ proposals }: IndexProps) {
               {!cfp_closed && (
                 <>
                   <p className="text-cloud-700 mx-auto mb-8 max-w-md">
-                    Share your knowledge with the Ruby community by submitting a
-                    proposal for EXAMPLE Conference.
+                    Share your knowledge with the Go community by submitting a
+                    proposal for GopherCon India.
                   </p>
                   <Link
                     href={`/proposals/new`}

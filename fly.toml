@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for cfp-sfruby on 2025-06-02T12:53:20-07:00
+# fly.toml app configuration for GopherCon India CFP
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-# app = 'my=cfp-app'
-primary_region = 'lax'
+app = 'cfp-gopherconindia'
+primary_region = 'bom'
 console_command = '/rails/bin/rails console'
 
 [build]

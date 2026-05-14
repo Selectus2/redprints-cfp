@@ -2,9 +2,9 @@
 @theme {
   --font-display: 'Martian Grotesk', 'sans-serif';
 
-  /* https://oklch.com/#0.6122,0.2313,22.61,100 */
-  --clr-primary-chroma: 0.2313;
-  --clr-primary-hue: 22.61;
+  /* Go cyan #00ADD8 — https://oklch.com/#0.7115,0.1241,218.04,100 */
+  --clr-primary-chroma: 0.1241;
+  --clr-primary-hue: 218.04;
 
   /* https://oklch.com/#0.6804,0.034,261.69,100 */
   --clr-secondary-chroma: 0.034;

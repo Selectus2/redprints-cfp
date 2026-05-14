@@ -183,7 +183,7 @@ export default function Form({ proposal, speaker, cfp }: FormProps) {
               maxLength={limits.pitch}
               placeholder={fieldName(
                 "pitch_details",
-                "Why is this talk important for the Ruby community? What makes you the right person to give it?",
+                "Why is this talk important for the Go community? What makes you the right person to give it?",
               )}
               required={submitting}
             />

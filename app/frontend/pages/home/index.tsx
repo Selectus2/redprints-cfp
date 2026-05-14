@@ -20,23 +20,25 @@ export default function Index({ oauth_providers }: IndexProps) {
     <Layout currentUser={user}>
       <div className="from-primary-500 to-primary-700 shadow-medium animate-fade-in mb-12 rounded-xl bg-gradient-to-b p-8 text-white">
         <h1 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-          Call for Proposals
+          GopherCon India 2026 — Call for Proposals
         </h1>
         <p className="text-cloud-50 max-w-3xl text-lg">
-          Share your knowledge and experience at the EXAMPLE conference!
+          The ultimate Go conference in India. Share your work, your war
+          stories and your ideas with the Go community.
         </p>
         <div className="text-primary-100 mt-8 flex flex-wrap gap-4">
           <div className="flex items-center">
             <CalendarIcon className="mr-2 h-5 w-5" />
-            <span>Neverber 39-40, 2025</span>
+            {/* TODO: confirm dates once 2026 edition is announced */}
+            <span>September 2026</span>
           </div>
           <div className="flex items-center">
             <MapPinIcon className="mr-2 h-5 w-5" />
-            <span>Olympus Mons, Mars</span>
+            <span>Jaipur, India</span>
           </div>
           <div className="flex items-center">
             <UsersIcon className="mr-2 h-5 w-5" />
-            <span>1500+ Attendees</span>
+            <span>Single-track Go conference</span>
           </div>
         </div>
       </div>
@@ -49,35 +51,61 @@ export default function Index({ oauth_providers }: IndexProps) {
             </h2>
             <div className="space-y-6">
               <p>
-                Thank you for your interest in speaking at our conference! We’re
-                excited to invite proposals for talks in the following tracks:
+                Thank you for your interest in speaking at GopherCon India 2026!
+                We invite proposals across the following themes:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>
                   <span className="font-medium">
-                    New Open Source and Tooling, Including AI
+                    Concurrency and Performance
                   </span>
                   <p>
-                    Talks about new tooling built for ambitious Ruby and Rails
-                    products.
+                    Goroutines, channels, the scheduler, profiling, pprof, and
+                    making Go programs faster in production.
                   </p>
                 </li>
                 <li>
-                  <span className="font-medium">Scaling Ruby and Rails</span>
+                  <span className="font-medium">
+                    Tooling, Compilers and Internals
+                  </span>
                   <p>
-                    Experiences and best practices scaling Ruby and Rails
-                    applications from scaleups and enterprises.
+                    The Go toolchain, generics, runtime, garbage collector, and
+                    libraries that push the ecosystem forward.
+                  </p>
+                </li>
+                <li>
+                  <span className="font-medium">
+                    Systems, Networking and Cloud
+                  </span>
+                  <p>
+                    Distributed systems, microservices, gRPC, databases,
+                    Kubernetes and cloud-native Go in the wild.
+                  </p>
+                </li>
+                <li>
+                  <span className="font-medium">
+                    Community, Career and Culture
+                  </span>
+                  <p>
+                    Mentorship, hiring, teams, contributing to open source, and
+                    growing the Go community in India.
+                  </p>
+                </li>
+                <li>
+                  <span className="font-medium">General</span>
+                  <p>
+                    Anything Go-flavoured that doesn’t fit the buckets above.
                   </p>
                 </li>
               </ul>
               <p>
-                Each talk should be 30 minutes in total, including time for Q&A.
-                We’re especially interested in talks that are:
+                Talks are 30 minutes including Q&A. We’re especially keen on
+                proposals that are:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>Educational and informative</li>
                 <li>Grounded in real-world experience</li>
-                <li>Accessible to Ruby developers of all levels</li>
+                <li>Accessible to Go developers of all levels</li>
               </ul>
             </div>
           </div>
@@ -101,10 +129,10 @@ export default function Index({ oauth_providers }: IndexProps) {
               <p>
                 <span className="font-medium">Important dates:</span>
               </p>
+              {/* TODO: confirm dates once 2026 edition is announced */}
               <ul className="list-disc space-y-1 pl-6">
-                <li>CFP opens: June 4, 2025</li>
-                <li>CFP closes: July 13, 2035</li>
-                <li>Notifications: July 21, 2035</li>
+                <li>CFP closes: August 15, 2026 (IST)</li>
+                <li>Notifications: rolling, within ~3 weeks of close</li>
               </ul>
             </div>
           </div>
@@ -194,9 +222,8 @@ export default function Index({ oauth_providers }: IndexProps) {
               If you have any questions about the CFP process or need help with
               your proposal, feel free to reach out to our team.
             </p>
-            {/* FIXME: Replace with your contact email */}
             <a
-              href="mailto:conference@example.com"
+              href="mailto:gautam@gopherconindia.org"
               className="text-primary-600 hover:text-primary-800 inline-flex items-center font-medium transition-colors"
             >
               Contact the CFP team
