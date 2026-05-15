@@ -16,7 +16,8 @@ module Authenticated
   def authenticate!
     return if current_user
 
-    redirect_to root_path
+    session[:redirect_on_auth] = request.fullpath
+    redirect_to auth_sign_in_path
   end
 
   def after_authentication_path
