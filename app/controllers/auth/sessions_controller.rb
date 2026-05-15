@@ -1,10 +1,11 @@
 module Auth
   class SessionsController < ApplicationController
-    layout "island"
-
     skip_authentication only: %i[new]
 
     def new
+      render inertia: "auth/sessions/new", props: {
+        oauth_providers: OmniAuth.providers
+      }
     end
 
     def destroy

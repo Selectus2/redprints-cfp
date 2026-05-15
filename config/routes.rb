@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # Authentication
   namespace :auth do
+    get "sign_in", to: "sessions#new"
     delete "sign_out", to: "sessions#destroy"
 
     # OmniAuth
