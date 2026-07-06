@@ -6,4 +6,9 @@ class CFPSerializer < ApplicationSerializer
     it.closed?
   end
   typelize is_closed: "boolean"
+
+  attribute :is_open do
+    it.open?
+  end
+  typelize is_open: "boolean"
 end

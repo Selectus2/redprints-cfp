@@ -3,9 +3,13 @@ User.create!(
   email: "admin@redprints.test",
   admin: true
 )
-# FIXME: You can add admin users here
-# User.create!(
-#   name: "Vova",
-#   email: "palkan@evilmartians.com",
-#   admin: true
-# )
+
+User.find_or_create_by!(email: "chaitali.khangar@gmail.com") do |user|
+  user.name = "Chaitali Khangar"
+  user.admin = true
+end
+
+User.find_or_create_by!(email: "vishwajeetsinghd@gmail.com") do |user|
+  user.name = "Vishwajeetsingh Desurkar"
+  user.admin = true
+end
