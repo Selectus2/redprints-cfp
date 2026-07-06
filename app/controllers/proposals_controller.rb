@@ -67,9 +67,14 @@ class ProposalsController < ApplicationController
   def set_cfp
     @cfp = CFP.find_by(id: params[:cfp_id].presence || params.dig(:proposal, :cfp_id)) || CFP.primary
     redirect_on_cfp_closed if @cfp.closed?
+    redirect_on_cfp_not_yet_open if @cfp.not_yet_open?
   end
 
   def redirect_on_cfp_closed
     redirect_back(fallback_location: root_path, alert: "CFP is now closed")
+  end
+
+  def redirect_on_cfp_not_yet_open
+    redirect_back(fallback_location: root_path, alert: "CFP is not yet open")
   end
 end

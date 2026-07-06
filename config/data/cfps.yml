@@ -4,20 +4,20 @@
     rails: Rails in Production
     oss: Open Source and Tooling
     community: Community, Career and Culture
-  # TODO: confirm final CFP close date once RubyConf India 2026 is announced
+  starts_at: "2026-07-07T00:00:00+05:30"
   deadline: "2026-08-15T23:59:00+05:30"
   field_names: {}
 - id: workshops
   tracks:
     workshop: ""
-  # TODO: confirm workshop CFP deadline
+  starts_at: "2026-07-07T00:00:00+05:30"
   deadline: "2026-08-15T23:59:00+05:30"
   field_names:
     header: "Submit Your Workshop"
 - id: lts
   tracks:
     lt: ""
-  # TODO: confirm lightning-talk CFP deadline
+  starts_at: "2026-07-07T00:00:00+05:30"
   deadline: "2026-09-01T23:59:00+05:30"
   field_names:
     header: "Submit Your Lightning Talk"
