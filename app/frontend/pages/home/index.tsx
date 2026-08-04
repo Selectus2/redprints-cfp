@@ -52,37 +52,29 @@ export default function Index({ oauth_providers }: IndexProps) {
             <div className="space-y-6">
               <p>
                 Thank you for your interest in speaking at RubyConf India 2026!
-                We invite proposals across the following themes:
+                This year, we are looking for talks that demonstrate how Ruby
+                is being used in production, beyond traditional Rails
+                applications, and across emerging areas such as AI, mobile
+                applications, games, developer tooling, and alternative
+                frameworks.
               </p>
+              <p>We invite proposals across the following themes:</p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>
-                  <span className="font-medium">Rails in Production</span>
+                  <span className="font-medium">Ruby in Production</span>
                   <p>
-                    Real-world experiences building, scaling and operating
-                    Rails apps in Indian and global product teams.
+                    Share real-world experiences of building, scaling,
+                    operating, and maintaining Ruby applications in
+                    production.
                   </p>
-                </li>
-                <li>
-                  <span className="font-medium">Open Source and Tooling</span>
-                  <p>
-                    New gems, tools, internals deep-dives and contributions
-                    powering the Ruby ecosystem.
-                  </p>
-                </li>
-                <li>
-                  <span className="font-medium">
-                    Community, Career and Culture
-                  </span>
-                  <p>
-                    Stories from the Ruby community — learning, mentorship,
-                    teams and careers.
-                  </p>
-                </li>
-                <li>
-                  <span className="font-medium">General</span>
-                  <p>
-                    Anything Ruby-flavoured that doesn’t fit the buckets above.
-                  </p>
+                  <p>Topics may include:</p>
+                  <ul className="list-disc space-y-1 pl-6">
+                    <li>Application architecture and system design</li>
+                    <li>Performance optimisation and scalability</li>
+                    <li>Reliability, monitoring, and observability</li>
+                    <li>Background processing and distributed systems</li>
+                    <li>Database performance and data modelling</li>
+                  </ul>
                 </li>
               </ul>
               <p>
