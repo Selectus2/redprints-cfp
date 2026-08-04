@@ -1,26 +1,44 @@
-# See https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/
+name: Deploy
 
-name: Fly Deploy
 on:
-  workflow_dispatch:
-  # workflow_run:
-  #   workflows:
-  #     - CI
-  #   branches:
-  #     - main
-  #     - master
-  #   types:
-  #     - completed
+  push:
+    branches:
+      - rubyconf-in
+      - gophercon-in
 
 jobs:
-  deploy:
-    name: Deploy app
+  deploy-rubyconf:
+    name: Deploy RubyConf CFP
+    if: github.ref_name == 'rubyconf-in'
     runs-on: ubuntu-latest
-    concurrency: deploy-group    # optional: ensure only one action runs at a time
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    concurrency:
+      group: deploy-rubyconf
+      cancel-in-progress: false
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --remote-only
-        env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script_stop: true
+          script: /data/srv/deploy.sh rubyconf
+
+  deploy-gophercon:
+    name: Deploy GopherCon CFP
+    if: github.ref_name == 'gophercon-in'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: deploy-gophercon
+      cancel-in-progress: false
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script_stop: true
+          script: /data/srv/deploy.sh gophercon
