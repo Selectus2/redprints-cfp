@@ -6,7 +6,7 @@
     systems: Systems, Networking and Cloud
     community: Community, Career and Culture
   starts_at: "2026-07-07T00:00:00+05:30"
-  deadline: "2026-08-15T23:59:00+05:30"
+  deadline: "2026-08-23T23:59:00+05:30"
   field_names:
     description: >
       Share your knowledge with the Go community at GopherCon India. Talks
@@ -15,7 +15,7 @@
   tracks:
     workshop: ""
   starts_at: "2026-07-07T00:00:00+05:30"
-  deadline: "2026-08-15T23:59:00+05:30"
+  deadline: "2026-08-23T23:59:00+05:30"
   field_names:
     header: "Submit Your Workshop"
 - id: lts
