@@ -131,7 +131,7 @@ export default function Index({ oauth_providers }: IndexProps) {
               </p>
               {/* TODO: confirm dates once 2026 edition is announced */}
               <ul className="list-disc space-y-1 pl-6">
-                <li>CFP closes: August 15, 2026 (IST)</li>
+                <li>CFP closes: August 23, 2026 (IST)</li>
                 <li>Notifications: rolling, within ~3 weeks of close</li>
               </ul>
             </div>
