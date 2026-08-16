@@ -29,8 +29,7 @@ export default function Index({ oauth_providers }: IndexProps) {
         <div className="text-primary-100 mt-8 flex flex-wrap gap-4">
           <div className="flex items-center">
             <CalendarIcon className="mr-2 h-5 w-5" />
-            {/* TODO: confirm dates once 2026 edition is announced */}
-            <span>September 2026</span>
+            <span>November 21, 2026</span>
           </div>
           <div className="flex items-center">
             <MapPinIcon className="mr-2 h-5 w-5" />
@@ -108,10 +107,10 @@ export default function Index({ oauth_providers }: IndexProps) {
               <p>
                 <span className="font-medium">Important dates:</span>
               </p>
-              {/* TODO: confirm dates once 2026 edition is announced */}
               <ul className="list-disc space-y-1 pl-6">
                 <li>CFP closes: August 23, 2026 (IST)</li>
                 <li>Notifications: rolling, within ~3 weeks of close</li>
+                <li>Conference: November 21, 2026, Hyderabad</li>
               </ul>
             </div>
           </div>
