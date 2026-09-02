@@ -98,6 +98,7 @@ class Avo::Resources::Proposal < Avo::BaseResource
   def actions
     action InvalidateScore
     action ResendConfirmation
+    action Avo::Actions::ExportProposals
   end
 
   def filters
