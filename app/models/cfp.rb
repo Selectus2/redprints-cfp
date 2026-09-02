@@ -8,6 +8,9 @@ class CFP < FrozenRecord::Base
   end
 
   attribute :deadline, DateTimeType
+  attribute :starts_at, DateTimeType
 
   def closed? = deadline.present? && deadline.past?
+  def not_yet_open? = starts_at.present? && starts_at.future?
+  def open? = !closed? && !not_yet_open?
 end

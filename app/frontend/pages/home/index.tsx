@@ -20,23 +20,24 @@ export default function Index({ oauth_providers }: IndexProps) {
     <Layout currentUser={user}>
       <div className="from-primary-500 to-primary-700 shadow-medium animate-fade-in mb-12 rounded-xl bg-gradient-to-b p-8 text-white">
         <h1 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-          Call for Proposals
+          RubyConf India 2026 — Call for Proposals
         </h1>
         <p className="text-cloud-50 max-w-3xl text-lg">
-          Share your knowledge and experience at the EXAMPLE conference!
+          Discover the spirit of Ruby. Connect, code, celebrate — share your
+          story with India’s Ruby community.
         </p>
         <div className="text-primary-100 mt-8 flex flex-wrap gap-4">
           <div className="flex items-center">
             <CalendarIcon className="mr-2 h-5 w-5" />
-            <span>Neverber 39-40, 2025</span>
+            <span>November 21, 2026</span>
           </div>
           <div className="flex items-center">
             <MapPinIcon className="mr-2 h-5 w-5" />
-            <span>Olympus Mons, Mars</span>
+            <span>Hyderabad, India</span>
           </div>
           <div className="flex items-center">
             <UsersIcon className="mr-2 h-5 w-5" />
-            <span>1500+ Attendees</span>
+            <span>Single-track Ruby conference</span>
           </div>
         </div>
       </div>
@@ -49,30 +50,35 @@ export default function Index({ oauth_providers }: IndexProps) {
             </h2>
             <div className="space-y-6">
               <p>
-                Thank you for your interest in speaking at our conference! We’re
-                excited to invite proposals for talks in the following tracks:
+                Thank you for your interest in speaking at RubyConf India 2026!
+                This year, we are looking for talks that demonstrate how Ruby
+                is being used in production, beyond traditional Rails
+                applications, and across emerging areas such as AI, mobile
+                applications, games, developer tooling, and alternative
+                frameworks.
               </p>
+              <p>We invite proposals across the following themes:</p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>
-                  <span className="font-medium">
-                    New Open Source and Tooling, Including AI
-                  </span>
+                  <span className="font-medium">Ruby in Production</span>
                   <p>
-                    Talks about new tooling built for ambitious Ruby and Rails
-                    products.
+                    Share real-world experiences of building, scaling,
+                    operating, and maintaining Ruby applications in
+                    production.
                   </p>
-                </li>
-                <li>
-                  <span className="font-medium">Scaling Ruby and Rails</span>
-                  <p>
-                    Experiences and best practices scaling Ruby and Rails
-                    applications from scaleups and enterprises.
-                  </p>
+                  <p>Topics may include:</p>
+                  <ul className="list-disc space-y-1 pl-6">
+                    <li>Application architecture and system design</li>
+                    <li>Performance optimisation and scalability</li>
+                    <li>Reliability, monitoring, and observability</li>
+                    <li>Background processing and distributed systems</li>
+                    <li>Database performance and data modelling</li>
+                  </ul>
                 </li>
               </ul>
               <p>
-                Each talk should be 30 minutes in total, including time for Q&A.
-                We’re especially interested in talks that are:
+                Talks are 30 minutes including Q&A. We’re especially keen on
+                proposals that are:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>Educational and informative</li>
@@ -102,9 +108,9 @@ export default function Index({ oauth_providers }: IndexProps) {
                 <span className="font-medium">Important dates:</span>
               </p>
               <ul className="list-disc space-y-1 pl-6">
-                <li>CFP opens: June 4, 2025</li>
-                <li>CFP closes: July 13, 2035</li>
-                <li>Notifications: July 21, 2035</li>
+                <li>CFP closes: August 23, 2026 (IST)</li>
+                <li>Notifications: rolling, within ~3 weeks of close</li>
+                <li>Conference: November 21, 2026, Hyderabad</li>
               </ul>
             </div>
           </div>
@@ -194,9 +200,8 @@ export default function Index({ oauth_providers }: IndexProps) {
               If you have any questions about the CFP process or need help with
               your proposal, feel free to reach out to our team.
             </p>
-            {/* FIXME: Replace with your contact email */}
             <a
-              href="mailto:conference@example.com"
+              href="mailto:team@rubyconfindia.org"
               className="text-primary-600 hover:text-primary-800 inline-flex items-center font-medium transition-colors"
             >
               Contact the CFP team

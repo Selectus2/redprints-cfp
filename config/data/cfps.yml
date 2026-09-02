@@ -1,10 +1,35 @@
 - id: primary
   tracks:
-    oss: New Open Source and Tooling
-    scale: Scaling Ruby and Rails
     general: General
-  deadline: "2025-12-14T00:00:00-07:00"
+    rails: Rails in Production
+    oss: Open Source and Tooling
+    community: Community, Career and Culture
+  starts_at: "2026-07-07T00:00:00+05:30"
+  deadline: "2026-08-23T23:59:00+05:30"
   field_names: {}
 - id: workshops
   tracks:
-    workshop:
+    workshop: ""
+  starts_at: "2026-07-07T00:00:00+05:30"
+  deadline: "2026-08-23T23:59:00+05:30"
+  field_names:
+    header: "Submit Your Workshop"
+- id: lts
+  tracks:
+    lt: ""
+  starts_at: "2026-07-07T00:00:00+05:30"
+  deadline: "2026-09-01T23:59:00+05:30"
+  field_names:
+    header: "Submit Your Lightning Talk"
+    description: >
+      Share your quick insights and lightning-fast ideas with the Ruby community at RubyConf India!
+    talk_header: "Lightning Talk Information"
+    title: "Title"
+    title_description: ""
+    abstract: "What will you talk about?"
+    abstract_description: "Give us a brief overview of your lightning talk topic"
+    details: "Talk Details"
+    details_description: "Tell us more about what you'll cover in your 5-minute presentation."
+    details_notice: "Remember, lightning talks are typically 5 minutes long with no Q&A."
+    pitch: "Why is this relevant to the Ruby community?"
+    pitch_description: ""
