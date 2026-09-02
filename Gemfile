@@ -42,6 +42,9 @@ gem "bundlebun"
 gem "lookbook", require: false
 gem "view_component-contrib"
 
+# Excel export
+gem "caxlsx"
+
 # JSON serialization
 gem "alba"
 gem "typelizer"
